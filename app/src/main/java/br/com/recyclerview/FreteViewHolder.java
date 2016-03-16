@@ -9,7 +9,7 @@ import android.widget.Toast;
 /**
  * Created by thalissonestrela on 14/03/16.
  */
-public class FreteViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+public class FreteViewHolder extends RecyclerView.ViewHolder {
     private Context context;
     public TextView tvOrigem;
     public TextView tvDestino;
@@ -19,10 +19,5 @@ public class FreteViewHolder extends RecyclerView.ViewHolder implements View.OnC
         this.context = context;
         this.tvOrigem = (TextView) view.findViewById(R.id.tvOrigem);
         this.tvDestino = (TextView) view.findViewById(R.id.tvDestino);
-    }
-
-    @Override
-    public void onClick(View view) {
-        Toast.makeText(this.context, "" + getPosition(), Toast.LENGTH_LONG).show();
     }
 }
