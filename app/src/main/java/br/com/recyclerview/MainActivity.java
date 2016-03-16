@@ -6,6 +6,8 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -28,5 +30,11 @@ public class MainActivity extends ActionBarActivity {
         rv.setAdapter(fa);
         rv.setItemAnimator(new DefaultItemAnimator());
         rv.setLayoutManager(new LinearLayoutManager(rv.getContext()));
+
+        // Headerview
+        View viewHeader = LayoutInflater.from(this).inflate(R.layout.headerview, null, false);
+
+        HeaderDecoration headerDecoration = new HeaderDecoration(viewHeader, false, 2, 2, 1);
+        rv.addItemDecoration(headerDecoration);
     }
 }
