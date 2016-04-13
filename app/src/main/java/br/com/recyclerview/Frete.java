@@ -69,6 +69,6 @@ public class Frete {
 
     @Override
     public String toString() {
-        return "Origem: " + origem + " Destino: " + destino;
+        return "Origem => " + origem + " Destino => " + destino;
     }
 }
