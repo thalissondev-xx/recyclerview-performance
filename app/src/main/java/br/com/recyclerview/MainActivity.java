@@ -31,7 +31,7 @@ public class MainActivity extends ActionBarActivity {
         rv.setItemAnimator(new DefaultItemAnimator());
         rv.setLayoutManager(new LinearLayoutManager(rv.getContext()));
 
-        // Headerview
+        // Headerview Test
         View viewHeader = LayoutInflater.from(this).inflate(R.layout.headerview, null, false);
 
         HeaderDecoration headerDecoration = new HeaderDecoration(viewHeader, false, 2, 2, 1);
